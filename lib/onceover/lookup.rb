@@ -2,7 +2,7 @@ require "onceover/hiera/version"
 require "onceover/hiera/cli"
 
 class Onceover
-  module Hiera
+  module Lookup
   end
 end
 

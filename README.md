@@ -1,6 +1,6 @@
 # Onceover::Hiera
 
-Hiera lookup support for [Onceover](https://github.com/dylanratcliffe/onceover), _The gateway drug to automated infrastructure testing with Puppet_
+Lookup (hiera) support for [Onceover](https://github.com/dylanratcliffe/onceover), _The gateway drug to automated infrastructure testing with Puppet_
 
 ## Installation
 
