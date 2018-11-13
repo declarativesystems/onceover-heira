@@ -73,6 +73,11 @@ hierarchy:
       - 'common.yaml'
 ```
 
+* In this example we have used the 
+  [safe_roles](https://forge.puppet.com/geoffwilliams/safe_roles/readme) puppet
+  module to normalise OS names and versions
+* You can use a custom factset to mock these as required
+
 ### /hiera.yaml
 If you have a `hiera.yaml` at the top of your control repository and do not have
 a `spec/hiera.yaml` file, we will use this to configure a test hierarchy.
@@ -151,6 +156,7 @@ bundle exec onceover run lookup --passthru="profile::foo::bar --explain --trace 
 ## FAQ/Gotchas
 
 **Command Ordering**
+
 To avoid the shell misinterpreting your `--passthru` argument, use the form:
 
 ```shell
@@ -163,7 +169,7 @@ You can run with `--passthru="blah blah --facts /path/to/facts/file.json"` and
 `puppet lookup` itself will attempt to resolve facts from the named file (which
 must not be a _factset_!)
 
-Alternatively, specify `--factset` outside the `--passthru` command and 
+Alternatively, specify `--factset` outside the `--passthru` argument and 
 onceover-lookup will rewrite the named factset for you and use it for the
 lookup.
 
