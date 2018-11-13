@@ -1,3 +1,13 @@
-[user]
-hiera_config = <%= hiera_yaml %>
-environment = "production"
+[main]
+hiera_config  = <%= hiera_yaml %>
+codedir       = .onceover/etc/puppetlabs/code
+ssldir        = spec/ssl
+certname      = fake.fake
+
+# Not strictly required but use separate directories to avoid polluting the host
+vardir        = <%= lookup_tmp_dir %>
+logdir        = <%= lookup_tmp_dir %>
+statedir      = <%= lookup_tmp_dir %>
+rundir        = <%= lookup_tmp_dir %>
+libdir        = <%= lookup_tmp_dir %>
+environment   = "production"

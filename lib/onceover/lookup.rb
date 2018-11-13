@@ -1,5 +1,5 @@
-require "onceover/hiera/version"
-require "onceover/hiera/cli"
+require "onceover/lookup/version"
+require "onceover/lookup/cli"
 
 class Onceover
   module Lookup
