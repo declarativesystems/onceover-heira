@@ -9,7 +9,7 @@ class Onceover
         @cmd ||= Cri::Command.define do
           name 'lookup'
           usage 'lookup [--name NAME]'
-          summary "Hello, World! plugin for Onceover"
+          summary "Do a hiera lookup"
           description <<-DESCRIPTION
 Run the `puppet lookup` command to use onceover configuration
           DESCRIPTION
